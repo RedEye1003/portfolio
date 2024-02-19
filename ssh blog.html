@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" light-mode="dark">
+
+<head>
+    <title>Hariharasuthan | ssh blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Hariharasuthan" content="Portfolio Website ssh blog page" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!--For Dark/Light mode Toggle-->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <!--Import animation.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/techstack.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/sshblog.css" />
+    <link rel="stylesheet" href="assets/css/cursor.css">
+    <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png">
+    <!--Favicon-->
+    <script defer src="./assets/js/dynamicTitle.js"></script>
+    </head>
+    <body class="no-scroll-preload">
+        <!-- loader -->
+        <div class="loader-container">
+            <div class="atom">
+                <div class="electron"></div>
+                <div class="electron-alpha"></div>
+                <div class="electron-omega"></div>
+            </div>
+        </div>
+        <!-- Dynamic Navbar -->
+        <div class="main pt-5">
+            <div style="margin-top: 60px;">
+            <h4 class="text-center heading1 skill-head">Gain SSH Access to Servers by <span class="my_skill">Brute-Forcing Credentials</span></h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-1">
+                        <div class="tech_cardssh">
+                <p>SSH is one of the most common protocols in use in modern IT infrastructures, and because of this, it can be a valuable attack vector for hackers. One of the most reliable ways to gain SSH access to servers is by brute-forcing credentials. There are a few methods of performing an SSH brute-force attack that will ultimately lead to the discovery of valid login credentials.</p></div>        
+            </div>
+            <div class="col-xl-6 col-sm-1">
+            <div class="image">
+                <img src="assets/images/blog1_image-removebg-preview.png" style="height: 375px; width: 340px;" alt="animae">
+            </div>
+        </div>
+            
+        </div>
+        </div>
+        </div>
+        <!--about ssh-->
+        <section>
+            <h4 class="text-center heading1 skill-head">About <span class="my_skill">ssh</span></h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-1">
+                        <div class="tech_cardssh">
+                            <h4>What is ssh?</h4>
+                            <ul>
+                                <li>SSH, which stands for Secure Shell, is a network protocol that allows for encrypted communication over an insecure network. This was developed as an alternative to Telnet, which sends information in plaintext, which is clearly a problem, especially when passwords are involved.</li>
+    
+                                <li>The SSH cryptographic network protocol operates on a client-server model. That is, the client initiates a connection to the server, and communication is established after authentication takes place. SSH can use both password and private key authentication, the latter of which is considered more secure.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-1">
+                        <div class="tech_cardssh">
+                            <h4>Uses Of SSh</h4>
+                                <p>Uses for SSH include providing a means for remote logins and command execution, file transfer, mobile development, and connectivity troubleshooting in cloud-based applications. Virtually every large enterprise implements SSH in one way or another, making it a valuable technology to become acquainted with.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-sm-1">
+                        <div class="tech_cardssh">
+                            <h4>NMAP</h4>
+                            <p>This program scans the network that a computer is connected to and outputs a list of ports, device names, operating systems, and several other identifiers that help the user understand the details behind their connection status. Nmap can be used by hackers to gain access to uncontrolled ports on a system.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-1">
+                        <div class="tech_cardssh">
+                            <h4>Metasploit Framework</h4>
+                            <p>The Metasploit Framework is a powerful tool that provides a universal interface to work with vulnerability exploit code. It has exploit code for a wide range of vulnerabilities that impact web servers, OSes, network equipment and everything in between.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--Scan with nmap-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Scan With Nmap</h4>
+                    <ul>
+                        <li>Before we begin any brute-force attacks, we need to determine the state of the port that SSH is running on. We can perform a simple Nmap scan to see if it is open or not. Instead of scanning all the default ports, we can specify a single port number with the -p flag.</li>
+                        <li>Above, we can see that port 22 is open and the SSH service is running on it. It would be a waste of time if this was closed or not running at all. Now we can start brute-forcing.
+                        </li>
+                    </ul>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 1.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+        <!--steps to attack-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Metasaploit</h4>
+                    <h4>Step:1</h4>
+                    <p>The first method we will try out today involves one of Metasploit's auxiliary scanners. First, start the PostgreSQL database with the following command.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 2.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:2</h4>
+                    <p>Now, we can fire up Metasploit by typing msfconsole in the terminal.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 3.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:3</h4>
+                    <p>You should see "msf" appear, though, for me, it's "msf5" since I'm using the most recent version, Metasploit 5, which can be upgraded by running the latest version of Kali. It's always a good idea to stay updated in order to take advantage of the latest exploits and tools. Here is the command I use to update:</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 4.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:4</h4>
+                    <p>Next, after being greeted by the welcome banner for msfconsole, we can find the appropriate module with the search command.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 5.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:5</h4>
+                    <p>The ssh_login module is exactly what we need. Equip it with the use command. Afterward, you should "msf5 auxiliary(scanner/ssh/ssh_login), so you know you're working inside the right place.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 6.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:6</h4>
+                    <p> Then we can type options to display the available settings for the scanner.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 7.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:7</h4>
+                    <p>We need to set a few things in order for this to work properly. First, RHOSTS is the IP address of our target.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 8.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:8</h4>
+                    <p>Next, STOP_ON_SUCCESS will stop after finding valid credentials.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 9.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:9</h4>
+                    <p> Then, USER_FILE is a list of usernames.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 10.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:10</h4>
+                    <p>And PASS_FILE is a list of passwords.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 11.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:11</h4>
+                    <p>Finally, there's VERBOSE, which will display all attempts.</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 12.jpg" style="width: 100%;">
+                </div>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                <div class="tech_cardssh-intro">
+                    <h4>Step:12</h4>
+                    <p>For the user and password files, I used a shortened list containing known credentials for the purpose of this demonstration. In a real attack, you would likely want to use one of the well-known wordlist or a custom one to fit your needs.We should be all set now. Type run at the prompt to kick it off:</p>
+                    <div class="container">
+                    <img src="./assets/images/blog1/ssh 14.jpg" style="width: 100%;">
+                </div>
+                <br>
+                <p>Since we set the verbose option, we can see all the attempts as they take place. Depending on the number of username and password combinations, this can take quite some time to run.When valid credentials are found, a success message is displayed.</p>
+                </div>          
+            </div>
+        </div>
+            </div>
+        </section>
+    
+    
+        <!--Cursor-->
+        <div class="cursor-dot-outline"></div>
+        <div class="cursor-dot"></div>
+        <!-- Dynamic footer section -->
+    
+        <!-- script -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/cursor.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="assets/js/techstack.js"></script>
+    </body>
+    
+    </html>
