@@ -1,0 +1,134 @@
+/* image animation*/
+ .image {
+    animation: move4 5s infinite linear;
+    margin-left: 120px;
+  }
+  .clog-img{
+    width: 200px;
+    height: 200px;
+  }
+  .animation-image {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: myfirst 15s 10;
+    animation-direction:alternate-reverse;
+  }
+  .tech_cardssh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 13px;
+    background-color: rgb(65, 62, 65);
+    width: 32.7vw;
+    margin:3.5em 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 2px black;
+}
+.tech_cardssh-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 13px;
+    background-color: rgb(65, 62, 65);
+    width: 70.7vw;
+    margin:3.5em 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 2px black;
+}
+html[light-mode="light"] .tech_cardssh{
+    background-color: white;
+    color: #303030;
+    box-shadow: 0px 0px 10px #303030;
+}
+html[light-mode="light"] .tech_cardssh-intro{
+    background-color: white;
+    color: #303030;
+    box-shadow: 0px 0px 10px #303030;
+}
+
+html[light-mode="light"] .tech_cardssh:hover{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid rgb(0, 0, 0);
+    border-right: 8px solid rgb(0, 0, 0);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+html[light-mode="dark"] .tech_cardssh:hover{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid rgb(0, 54, 248);
+    border-right: 8px solid rgb(0, 54, 248);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+html[light-mode="light"] .tech_cardssh-intro:hover{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid rgb(0, 0, 0);
+    border-right: 8px solid rgb(0, 0, 0);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+html[light-mode="dark"] .tech_cardssh-intro:hover{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid rgb(0, 54, 248);
+    border-right: 8px solid rgb(0, 54, 248);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.tech_cardssh h4{
+    font-weight: bold;
+    font-family: cursive;
+}
+  @keyframes myfirst {
+    from {right: 0px;}
+    to {left: 200px;}
+  }
+
+  @media (max-width:1180px){
+    .tech_cardssh{
+        width: 45vw;
+    }
+}
+@media (max-width:1000px){
+    .tech_cardssh{
+        width: 90vw;
+        margin-left: 7px;
+    }
+    .tech_cardssh-intro{
+        width: 90vw;
+        margin-left: 7px;
+    }
+    .image {
+        margin-left: 9px;
+      }
+}
+@media (max-width:500px){
+    .tech_cardssh{
+        width: 90vw;
+        margin-left: 7px;
+    }
+    .tech_cardssh-intro{
+        width: 90vw;
+        margin-left: 7px;
+    }
+    .image {
+        margin-left: -43px;
+      }
+}
+@media (max-width:350px){
+    .tech_cardssh{
+        width: 95vw;
+    }
+}

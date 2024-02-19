@@ -1,0 +1,92 @@
+.tech_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 13px;
+    background-color: rgb(65, 62, 65);
+    width: 100%;
+    margin:3.5em 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 2px black;
+}
+.techstack-box{
+    /* position: absolute; */
+    /* left: 0; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+}
+html[light-mode="light"] .tech_card{
+    background-color: white;
+    color: #303030;
+    box-shadow: 0px 0px 10px #303030;
+}
+.tech_card img{
+    width: 120px;
+    height: 120px;
+    /* border: 1px solid black; */
+    /* box-shadow: 8px 8px 7px black; */
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 20px;
+    
+}
+.tech_card h4{
+    font-weight: bold;
+    font-family: cursive;
+}
+.tech_card .card_img img{
+    animation: scale_anime 2s infinite ease-in-out;
+}
+html[light-mode="light"] .tech_card img{
+    animation: scale_anime_dark 2s infinite ease-in-out;
+
+}
+.text-center {
+    text-align: center!important;
+    margin-top: -92px;
+}
+
+
+@media (max-width:1180px){
+    .tech_card{
+        width: 45vw;
+    }
+    .techstack-box{
+        justify-content: center !important;
+    }
+}
+@media (max-width:1000px){
+    .tech_card{
+        width: 90vw;
+        height: 100%;
+        margin-left: 10px;
+    }
+}
+@media (max-width:450px){
+    .skill-head{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .main-heading{
+        font-size: 25px;
+    }
+    .techstacks_icons .techstack_icon i {
+        font-size: 1.8rem;
+    }
+    .pre-heading{
+        font-size: 13px;
+    }
+}
+@media (max-width:350px){
+    .techstack-box{
+        justify-content: center;
+    }
+    .tech_card{
+        width: 95vw;
+    }
+}

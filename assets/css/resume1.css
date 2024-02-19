@@ -1,0 +1,226 @@
+
+
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    box-shadow: 0 20px 25px 15px rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient(147deg, #545b62a8, black);
+    color: white;
+    margin-left: 396px;
+    padding-left: 200px;
+}
+.date {
+    background: #FF4081;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.timeline-img-header {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+    /* background-image: url(assets/images/education-page/edTimeline1.png); */
+}
+
+.resume{
+  text-align: center;
+}
+
+.skillbar{
+  text-align: center;
+}
+/* Resume content*/
+.cer-head{
+  margin-left: 41%;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+.cer-head{
+  margin-left: 18%;
+}
+}
+
+.content .container {
+  background: rgba(0, 0, 22, 0.4);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.content .container .bar {
+  margin-bottom: 15px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 22, 0.9);
+  transition: 0.2s;
+}
+
+.content .container .bar1 {
+  margin-bottom: 15px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 22, 0.9);
+  transition: 0.2s;
+  padding: 20px;
+}
+
+.content .container .bar .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.content .container .bar:hover {
+  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.content .container .bar1:hover {
+  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* skills section starts */
+.skills {
+    min-height: 90vh;
+  }
+  .skills h2 {
+    color: #fff;
+  }
+  .skills .heading span {
+    color: rgb(255, 230, 0);
+  }
+  .skills .container {
+    background: rgba(0, 0, 22, 0.4);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+  .skills .container .bar {
+    margin-bottom: 15px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 22, 0.9);
+    transition: 0.2s;
+  }
+  .skills .container .bar:hover {
+    box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+  }
+  .skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .skills .container .bar .info i {
+    font-size: 4rem;
+  }
+  .skills .container .bar .info span {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-left: 0.5rem;
+  }
+  /* skills media queries starts*/
+  @media screen and (max-width: 600px) {
+    .skills .container {
+      padding: 0;
+      margin: 0;
+    }
+    .skills .container .row {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 1rem;
+      padding: 2rem 0.2rem 2rem 0.2rem;
+      gap: 1rem;
+    }
+    .skills .container {
+      margin-top: 5px;
+      width: 100%;
+    }
+  }
+  /* skills media queries ends*/
+  /* skills section ends */
+
+@media (max-width:1180px){
+    .tech_card{
+        width: 45vw;
+    }
+    .tech_cardc{
+        width: 45vw;
+    }
+    .tech_cardresume{
+        width: 45vw;
+    }
+    .techstack-box{
+        justify-content: center !important;
+    }
+}
+@media (max-width:1000px){
+    .tech_card{
+        width: 90vw;
+    }
+    .tech_cardc{
+        width: 90vw;
+    }
+    .tech_cardresume{
+        width: 90vw;
+        margin-left: 0px;
+    }
+    .timeline-content {
+        width: 90vw;
+        margin-left: 20px;
+        padding-left: 45px;
+        padding-top: 25px;
+    }
+}
+@media (max-width:450px){
+    .skill-head{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .main-heading{
+        font-size: 25px;
+    }
+    .techstacks_icons .techstack_icon i {
+        font-size: 1.8rem;
+    }
+    .pre-heading{
+        font-size: 13px;
+    }
+}
+@media (max-width:350px){
+    .techstack-box{
+        justify-content: center;
+    }
+    .tech_card{
+        width: 95vw;
+    }
+    .timeline-content {
+        width: 95vw;
+    }
+}
