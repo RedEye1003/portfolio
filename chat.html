@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Page</title>
+</head>
+<body>
+    <div id="chat-messages">
+        <!-- Existing chat messages will be displayed here -->
+    </div>
+    
+    <form id="chat-form" action="store_input.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="message" id="message" placeholder="Enter your message">
+        <input type="file" name="image" id="image">
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        // Function to load previous chat messages
+        function loadChatMessages() {
+            fetch('messages.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('chat-messages').innerHTML = data;
+            });
+        }
+
+        // Load chat messages when the page loads
+        window.onload = function() {
+            loadChatMessages();
+        };
+    </script>
+</body>
+</html>
