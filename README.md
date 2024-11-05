@@ -12,7 +12,7 @@
     </p>
   </div>
     <!-- Image on the left side -->
-  <div style="flex: 1;">
+  <div class="center" style="flex: 1;">
     <img src="assets/images/blog1_image-removebg-preview.png" style="height: 375px; width: 340px;" alt="animae">
   </div>
 
