@@ -17,3 +17,5 @@
   </div>
 
 </div>
+
+## Start by locating a URL on the target site that includes input parameters. For instance:
