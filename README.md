@@ -81,6 +81,6 @@ To obtain the name of the current database, use database().
                 <img src="./assets/images/blog 2/sql 8.jpg" style="width: 70%;">
             </div>
 
-# Disclaimer:
+# ⚠️ **Disclaimer:**
 This blog post is intended for educational and informational purposes only. The techniques described here were conducted on a live production application with proper authorization and have since been responsibly disclosed and patched. Unauthorized testing or exploitation of vulnerabilities on any application without explicit permission is illegal and unethical. Always ensure you have the necessary permissions before conducting security testing.
 
