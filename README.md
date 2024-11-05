@@ -48,7 +48,7 @@ Insert SQL commands in the space created in Step 4. Start by using ORDER BY to d
 * Example: https://www.hicas.ac.in/pg-course?link=mca' order by 31--+ <br>
 If this produces an error such as Unknown column '31' in 'order clause', reduce the number and test again.
  <div class="container">
-                <img src="./assets/images/blog 2/sql 4.jpg" style="width: 70%;">
+                <img src="./assets/images/blog 2/sql 4.jpg" style="width: 80%;">
             </div>
 
 * Example: https://www.hicas.ac.in/pg-course?link=mca' order by 30--+ <br>
