@@ -82,5 +82,5 @@ To obtain the name of the current database, use database().
             </div>
 
 # ⚠️ **Disclaimer:**
-This blog post is intended for educational and informational purposes only. The techniques described here were conducted on a live production application with proper authorization and have since been responsibly disclosed and patched. Unauthorized testing or exploitation of vulnerabilities on any application without explicit permission is illegal and unethical. Always ensure you have the necessary permissions before conducting security testing.
+*This blog post is intended for educational and informational purposes only. The techniques described here were conducted on a live production application with proper authorization and have since been responsibly disclosed and patched. Unauthorized testing or exploitation of vulnerabilities on any application without explicit permission is illegal and unethical. Always ensure you have the necessary permissions before conducting security testing.*
 
