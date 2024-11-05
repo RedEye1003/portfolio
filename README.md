@@ -11,11 +11,6 @@
       to influence the execution of predefined SQL commands.
     </p>
   </div>
-    <!-- Image on the left side -->
-  <div class="center" style="flex: 1;">
-    <img src="assets/images/blog1_image-removebg-preview.png" style="height: 150px; width: 200px;" alt="animae">
-  </div>
-
 </div>
 
 ## STEP 1 - Identify a URL with Input Parameters
