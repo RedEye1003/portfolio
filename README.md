@@ -1,4 +1,4 @@
-# Hariharasuthan's SQL Injection Blog Page
+# Step-by-Step Guide to SQL Injection: Finding Vulnerabilities and Dumping Data
 
 <div style="display: flex; align-items: center;">
   <!-- Text on the right side -->
