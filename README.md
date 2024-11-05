@@ -19,7 +19,7 @@
 </div>
 
 ## STEP 1 - Identify a URL with Input Parameters
-Start by locating a URL on the target site that includes input parameters. 
+Start by locating a URL on the target site that includes input parameters. <br>
 For instance: https://www.hicas.ac.in/pg-course?link=mca
 
 ## STEP 2 - Generate an Error Using This URL
