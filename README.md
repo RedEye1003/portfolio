@@ -14,14 +14,14 @@
 </div>
 
 ## STEP 1 - Identify a URL with Input Parameters
-+ Start by locating a URL on the target site that includes input parameters. <br>
+Start by locating a URL on the target site that includes input parameters. <br>
 For instance: https://www.hicas.ac.in/pg-course?link=mca
  <div class="container">
                 <img src="./assets/images/blog 2/sql 1.jpg" style="width: 70%;">
             </div>
 
 ## STEP 2 - Generate an Error Using This URL
-* To test for errors, experiment with various input values:
+To test for errors, experiment with various input values:
 - Alphanumeric Values <br>
 Example: https://www.hicas.ac.in/pg-course?link=abcd1234
 - Large Numbers <br>
@@ -36,14 +36,14 @@ Example: https://www.hicas.ac.in/pg-course?link=mca'"
             </div>
 
 ## STEP 3 - Eliminate the Error to Balance the Query
-* Use spacing and comment indicators like --+ to balance the query structure effectively.
+Use spacing and comment indicators like --+ to balance the query structure effectively.
  <div class="container">
                 <img src="./assets/images/blog 2/sql 3.jpg" style="width: 70%;">
             </div>
 
 ## STEP 4 - Inject SQL Code
 
-* Insert SQL commands in the space created in Step 4. Start by using ORDER BY to determine the number of columns in the database:
+Insert SQL commands in the space created in Step 4. Start by using ORDER BY to determine the number of columns in the database:
 
 * Example: https://www.hicas.ac.in/pg-course?link=mca' order by 31--+ <br>
 If this produces an error such as Unknown column '31' in 'order clause', reduce the number and test again.
@@ -59,21 +59,21 @@ Once you no longer receive an error, you’ll have identified the number of colu
 
 ## STEP 5 - Identify Vulnerable Columns with UNION SELECT
 
-* To locate vulnerable columns among the 30, use UNION ALL SELECT. The result may indicate specific vulnerable columns, such as columns 5, 10, 11, 12, and 13.
+To locate vulnerable columns among the 30, use UNION ALL SELECT. The result may indicate specific vulnerable columns, such as columns 5, 10, 11, 12, and 13.
 <div>
    <img src="./assets/images/blog 2/sql 6.jpg" style="width: 70%;">
 </div>
 
 ## STEP 6 - Dump the Entire Database Using Vulnerable Columns
 
-* With the identified vulnerable columns, you can now retrieve data. For instance, retrieve the database version with @@version.
+With the identified vulnerable columns, you can now retrieve data. For instance, retrieve the database version with @@version.
 <div class="container">
                 <img src="./assets/images/blog 2/sql 7.jpg" style="width: 70%;">
             </div>
 
 ## STEP 7 - Dump the Current Database Name
 
-* To obtain the name of the current database, use database().
+To obtain the name of the current database, use database().
 <div class="container">
                 <img src="./assets/images/blog 2/sql 8.jpg" style="width: 70%;">
             </div>
