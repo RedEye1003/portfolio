@@ -1,12 +1,6 @@
 # Hariharasuthan's SQL Injection Blog Page
 
 <div style="display: flex; align-items: center;">
-
-  <!-- Image on the left side -->
-  <div style="flex: 1;">
-    <img src="assets/images/blog1_image-removebg-preview.png" style="height: 75px; width: 75px;" alt="animae">
-  </div>
-
   <!-- Text on the right side -->
   <div style="flex: 2; padding-left: 20px;">
     <p>
@@ -16,6 +10,10 @@
       on the operating system. SQL injection attacks are a type of injection attack in which SQL commands are injected into data-plane input 
       to influence the execution of predefined SQL commands.
     </p>
+  </div>
+    <!-- Image on the left side -->
+  <div style="flex: 1;">
+    <img src="assets/images/blog1_image-removebg-preview.png" style="height: 375px; width: 340px;" alt="animae">
   </div>
 
 </div>
