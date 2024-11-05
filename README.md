@@ -4,7 +4,7 @@
 
   <!-- Image on the left side -->
   <div style="flex: 1;">
-    <img src="assets/images/blog1_image-removebg-preview.png" style="height: 375px; width: 340px;" alt="animae">
+    <img src="assets/images/blog1_image-removebg-preview.png" style="height: 75px; width: 75px;" alt="animae">
   </div>
 
   <!-- Text on the right side -->
