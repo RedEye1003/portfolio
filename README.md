@@ -18,4 +18,5 @@
 
 </div>
 
-## Start by locating a URL on the target site that includes input parameters. For instance:
+## STEP 1
+Start by locating a URL on the target site that includes input parameters. For instance:
