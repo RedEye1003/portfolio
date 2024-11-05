@@ -13,7 +13,7 @@
   </div>
     <!-- Image on the left side -->
   <div class="center" style="flex: 1;">
-    <img src="assets/images/blog1_image-removebg-preview.png" style="height: 300px; width: 200px;" alt="animae">
+    <img src="assets/images/blog1_image-removebg-preview.png" style="height: 100px; width: 200px;" alt="animae">
   </div>
 
 </div>
