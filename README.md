@@ -19,12 +19,13 @@
 </div>
 
 ## STEP 1 - Identify a URL with Input Parameters
-Start by locating a URL on the target site that includes input parameters. For instance: https://www.hicas.ac.in/pg-course?link=mca
+Start by locating a URL on the target site that includes input parameters. 
+For instance: https://www.hicas.ac.in/pg-course?link=mca
 
 ## STEP 2 - Generate an Error Using This URL
 To test for errors, experiment with various input values:
 
-Alphanumeric Values
+Alphanumeric Values /n
 Example: https://www.hicas.ac.in/pg-course?link=abcd1234
 
 Large Numbers
