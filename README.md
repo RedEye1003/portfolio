@@ -22,14 +22,11 @@ For instance: https://www.hicas.ac.in/pg-course?link=mca
 
 ## STEP 2 - Generate an Error Using This URL
 To test for errors, experiment with various input values:
-
-Alphanumeric Values <br>
+- Alphanumeric Values <br>
 Example: https://www.hicas.ac.in/pg-course?link=abcd1234
-
-Large Numbers <br>
+- Large Numbers <br>
 Example: https://www.hicas.ac.in/pg-course?link=999999999999
-
-Special Characters <br>
+- Special Characters <br>
 Try symbols like ', ", #, %, &, *, -, and +. <br>
 Example: https://www.hicas.ac.in/pg-course?link=mca'"
 
@@ -83,6 +80,5 @@ To obtain the name of the current database, use database().
 
 # ⚠️ **Disclaimer:**
 This blog post is intended for educational and informational purposes only. The techniques described here were conducted on a live production application with proper authorization and have since been responsibly disclosed and patched. Unauthorized testing or exploitation of vulnerabilities on any application without explicit permission is illegal and unethical. Always ensure you have the necessary permissions before conducting security testing.
-<span style="color:blue">This text will be blue</span>
 
 
