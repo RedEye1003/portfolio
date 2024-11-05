@@ -22,7 +22,7 @@
 Start by locating a URL on the target site that includes input parameters. <br>
 For instance: https://www.hicas.ac.in/pg-course?link=mca
  <div class="container">
-                <img src="./assets/images/blog 2/sql 1.jpg" style="width: 100%;">
+                <img src="./assets/images/blog 2/sql 1.jpg" style="width: 70%;">
             </div>
 
 ## STEP 2 - Generate an Error Using This URL
