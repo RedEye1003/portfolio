@@ -44,6 +44,50 @@
     />
     <!--Favicon-->
     <script defer src="./assets/js/dynamicTitle.js"></script>
+    <style>
+       table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      color: #26ff00;
+      font-style: italic;
+    }
+    .severity {
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+    }
+    .p1 { background-color: #900C3F;}
+    .p2 { background-color: red; }
+    .p3 { background-color: orange; }
+    .p4 { background-color: #2196F3; }
+    .p5 { background-color: #4CAF50; }
+    .status-link {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .logo-container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+       .logo-container img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    </style>
   </head>
   <!-- pre load -->
   <body class="no-scroll-preload">
@@ -491,6 +535,22 @@
       </div>
       </section>
       <br>
+  <!-- About me-->
+  <section class="content" id="content">
+    <h4 class="text-center heading1 skill-head">
+      About <span class="my_skill">Me</span>
+    </h4>
+
+    <div class="container">
+      <div class="row" id="skillsContainer">
+        <div class="bar col-md-12">
+          <div class="info">
+        <p>Hi, myself Naveen Kumar. With a lot of passion in cybersecurity right from my school days, I started to learn ethical hacking and penetration testing stuffs from my school days itself! Slowly with persistence, When there is an important decision should be taken in my life (Should be a Mechanical Engineer as per Degree or Should follow my passion and learn hard to achieve it 💪) Never Give up your Dreams! I said Never 😈 Yup I chose Cyber Security field. Currently am working in one of the Big4 Consulting as Cyber Security Manager and doing Red Team engagements successfully for various clients around the globe and helping them to fix their security gaps.</p>
+        </div>
+        </div>
+</div>
+</div>
+</section>
   <!-- resume content -->  
   <section class="content" id="content">
     <h4 class="text-center heading1 skill-head">
@@ -573,7 +633,98 @@
 </section>
 <br>
 <br>
-    <!-- skills section starts -->
+
+    <!--Hall Of fame section-->
+    <section class="content" id="content">
+      <h4 class="text-center heading1 skill-head">
+        My <span class="my_skill">Achievements</span>
+      </h4>
+      <div class="container">
+      <div class="bar1">
+        <h1>🏆 Hall of Fame</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Program Name</th>
+              <th>Severity</th>
+              <th>Vulnerability Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>December 31, 2021</td>
+              <td>Microsoft Security Response Center</td>
+              <td><span class="severity p4">P4</span></td>
+              <td>Github Information Disclosure</td>
+              <td><a href="https://msrc.microsoft.com/update-guide/acknowledgement" class="status-link">Vulnerability Closed</a></td>            
+            </tr>
+            <tr>
+              <td>July 02, 2024</td>
+              <td>Exam Prep Tool Security Research Reward</td>
+              <td><span class="severity p2">P2</span></td>
+              <td>Other</td>
+              <td><a href="https://cyber.comolho.com/verify-certificate/c54e84c3-2ea4-484f-9fd5-1cfcedae1530/" class="status-link">View Certificate</a></td>
+            </tr>
+            <tr>
+              <td>July 02, 2024</td>
+              <td>Exam Prep Tool Security Research Reward</td>
+              <td><span class="severity p3">P3</span></td>
+              <td>Other</td>
+              <td>Rewarded</td>
+            </tr>
+            <tr>
+              <td>May 30, 2024</td>
+              <td>Baazi Games Bug Bounty Program</td>
+              <td><span class="severity p4">P4</span></td>
+              <td>Cross Site Scripting</td>
+              <td><a href="https://cyber.comolho.com/verify-certificate/a6860bdc-2397-465c-acfa-d23d061e10f5/" class="status-link">View Certificate</a></td>
+            </tr>
+            <tr>
+              <td>May 30, 2024</td>
+              <td>Baazi Games Bug Bounty Program</td>
+              <td><span class="severity p4">P4</span></td>
+              <td>Cross Site Scripting</td>
+              <td><a href="https://cyber.comolho.com/verify-certificate/e6b09705-7a1d-4ab5-a248-89e80fa7ace4/" class="status-link">View Certificate</a></td>
+            </tr>
+            <tr>
+              <td>May 07, 2024</td>
+              <td>QuickReel's Bounty Programme</td>
+              <td><span class="severity p5">P5</span></td>
+              <td>Other</td>
+              <td>Rewarded</td>
+            </tr>
+            <tr>
+              <td>November 19, 2024</td>
+              <td>Jobaaj</td>
+              <td><span class="severity p1">P1</span></td>
+              <td>Github Information Disclosure</td>
+              <td>Vulnerability Closed</td>            
+            </tr>
+            <tr>
+              <td>December 19, 2021</td>
+              <td>Hindustan College of Arts & Science</td>
+              <td><span class="severity p1">P1</span></td>
+              <td>Github Information Disclosure</td>
+              <td><a href="sql injection.html" class="status-link">Vulnerability Closed</a></td>           
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <div class="logo-container">
+          <img src="image/microsoft-logo-02.jpeg" alt="Microsoft">
+          <img src="image/quickreel.jpg" alt="QuickReel Logo">
+          <img src="image/baazigames.webp" alt="Baazi Games Logo">
+          <img src="image/exampreptool_logo.jpeg" alt="Exam Prep Tool Logo">
+          <img src="image/jobaaj_com_logo.jpeg" alt="Jobaaj Logo">
+          <img src="image/hicas.png" alt="Hindustan Arts">
+        </div>
+    </div>
+    </section>
+    <br><br>
+    <!-- experience section -->
+         <!-- skills section starts -->
     <section class="skills" id="skills">
       <h4 class="text-center heading1 skill-head">
         Skills & <span class="my_skill">Abilities</span>
@@ -657,77 +808,10 @@
       </div>
     </section>
     <!-- skills section ends -->
-<br><br>
-    <!--skills section-->
-    <section class="content" id="content">
-      <h4 class="text-center heading1 skill-head">
-        MY <span class="my_skill">Skills</span>
-      </h4>
-    
-      <div class="container">
-      
-          <div class="bar1">
-            <div class="title-wrapper">
-              <h5 class="h5 skillbar">BASICS OF COMPUTER HARDWARE &amp; SOFTWARE - 95%</h5>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 95%"></div>
-            </div>
-        </div>
-          <div class="bar1">
-            <div class="title-wrapper">
-              <h5 class="h5 skillbar">NETWORKING - ROUTING &amp; SWITCHING(CISCOASA) - 80%</h5>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 80%"></div>
-            </div>
-          </div>
-  <div class="bar1">
-    <div class="title-wrapper">
-    <h5 class="h5 skillbar">SERVER ADMINISTRATION - WINDOWS AND LINUX - 80%</h5>
-  </div>
-
-  <div class="skill-progress-bg">
-    <div class="skill-progress-fill" style="width: 80%"></div>
-  </div>
-</div>
-  <div class="bar1">
-    <div class="title-wrapper">
-      <h5 class="h5 skillbar">ETHICAL HACKING - 90%</h5>
-    </div>
-
-    <div class="skill-progress-bg">
-      <div class="skill-progress-fill" style="width: 90%"></div>
-    </div>
-  </div>
-  <div class="bar1">
-    <div class="title-wrapper">
-      <h5 class="h5 skillbar">BUG HUNTING - 95%</h5>
-    </div>
-
-    <div class="skill-progress-bg">
-      <div class="skill-progress-fill" style="width: 95%"></div>
-    </div>
-  </div>
-  <div class="bar1">
-    <div class="title-wrapper">
-      <h5 class="h5 skillbar">WEB DESIGN - 99%</h5>
-    </div>
-
-    <div class="skill-progress-bg">
-      <div class="skill-progress-fill" style="width: 99%"></div>
-    </div>
-  </div>       
-    </div>
-    </section>
-    <br><br>
-    <!-- experience section -->
+     <!-- Experience section-->
     <h4 class="text-center heading1 skill-head">
       MY <span class="my_skill">Experience</span>
     </h4>
-    <br />
-    <br />
-
     <div class="timeline-content timeline-card js--fadeInRight">
       <div>
         <div
