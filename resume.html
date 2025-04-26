@@ -87,6 +87,77 @@
       border-radius: 15px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+    .item {
+  display: -webkit-box;
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.item .image {
+  padding: 1em 2em;
+  width: 50%;
+  margin: auto;
+}
+.item .image > div {
+  position: relative;
+  text-align: center;
+  font-size: 0.8em;
+}
+.item .image > div::after {
+  content: "";
+  width: 50%;
+  height: 0;
+  border-bottom: 3px solid black;
+  position: absolute;
+  top: 2.75em;
+  left: 2.5em;
+  z-index: -1;
+}
+.item .image img {
+  height: 5em;
+  border: 0.35em solid #5ed3bf;
+}
+.item .image span {
+  display: block;
+  clear: both;
+  padding: 0.25em 0;
+  margin: 0.5em 0;
+  background: #3b4262;
+}
+.item .details {
+  position: relative;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+          width: 70%;
+}
+.item .details > div {
+  border: 3px solid white;
+  border-radius: 1.0em;
+  padding: 1.5em;
+  margin: 1em 0;
+}
+.item .details > div h1 {
+  color: #5ed3bf;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  letter-spacing: 0.1em;
+}
+.item .details > div p {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+}
+.item .details::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  border-left: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: -4.35em;
+  z-index: -1;
+}
     </style>
   </head>
   <!-- pre load -->
@@ -812,52 +883,51 @@
     <h4 class="text-center heading1 skill-head">
       MY <span class="my_skill">Experience</span>
     </h4>
-    <div class="timeline-content timeline-card js--fadeInRight">
-      <div>
-        <div
-          class="timeline-img-header"></div>
-      </div>
-      <div class="date date2">May 2022 - January 2023</div>
-      <div class="alignment">
-        <h3 class="timelineHeading2">Hack Over Security</h3>
-        <h6>Role : Security Analyst</h6>
-        <a href="https://www.hackoversecurity.com/"
-          ><h6>www.hackoversecurity.com</h6></a
-        >
-      </div>
-    </div>
-    <br><br>
-    <div class="timeline-content timeline-card js--fadeInRight">
-      <div>
-        <div
-          class="timeline-img-header"></div>
-      </div>
-      <div class="date date2">NOV 2023 - FEB 2024</div>
-      <div class="alignment">
-        <h3 class="timelineHeading2">DigiAlert</h3>
-        <h6>Role : Associate Security Consultant</h6>
-        <a href="https://www.digialert.com/"
-          ><h6>www.digialert.com</h6></a
-        >
-      </div>
-    </div>
-<br><br>
-    <div class="timeline-content timeline-card js--fadeInRight">
-      <div>
-        <div
-          class="timeline-img-header"></div>
-      </div>
-      <div class="date date2">JUN 2024 - CURRENT</div>
-      <div class="alignment">
-        <h3 class="timelineHeading2">Futurecalls Technology Pvt Ltd</h3>
-        <h6>Role : Information Security Analyst</h6>
-        <a href="https://futurecalls.com/"
-          ><h6>futurecalls.com</h6></a
-        >
-      </div>
-    </div>
-    <br><br>
+<!-- section new-->
+<div>
+  <div class="item">
+   <div class="image">
+      <img src="image/FC GIF.gif" alt="Avatar" style="width:250px">
+ </div>
+<div class="details">
+  <div>
+    <h1><a href="https://www.futurecalls.com/" target="_blank">Futurecalls Technology Private Limited</a></h1>
+<p>Information Security Analyst</p>
+<p>Jun 2024 - Present</p>
+<p>Chennai</p>
+</div>
+</div>
+</div>
 
+<div class="item">
+<div class="image">
+<img src="image/digialert-logo2.webp" alt="Avatar">
+</div>
+<div class="details">
+<div>
+<h1><a href="https://digialert.com/" target="_blank">Digialert</a></h1>
+<p>Associate Security Consultant</p>
+<p>Nov 2023 - Feb 2024</p>
+<p>Chennai</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="image">
+<img src="image/hackoversecurity.png" alt="Avatar">
+</div>
+<div class="details">
+<div>
+<h1><a href="https://hackoversecurity.org/" target="_blank">Hack Over Security</a></h1>
+<p>Security Analyst</p>
+<p>May 2022 - Jan 2023</p>
+<p>Coimbatore</p>
+</div>
+</div>
+</div>
+</div>
+<br>
     <!--Cursor-->
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
