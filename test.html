@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Running Emoji (Inverted)</title>
+  <style>
+    .runner {
+      font-size: 2rem;
+      position: absolute;
+      right: 0;
+      transform: scaleX(-1); /* This inverts the emoji horizontally */
+      animation: run-left 4s linear infinite;
+    }
+
+    @keyframes run-left {
+      0% { right: 0; }
+      100% { right: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="runner">🏃‍♂️</div>
+</body>
+</html>

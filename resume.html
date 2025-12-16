@@ -5,10 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Hariharasuthan" content="Portfolio Website Resume page" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -26,22 +25,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
     <link rel="stylesheet" href="assets/css/preloader.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/techstack.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/resume1.css" />
     <link rel="stylesheet" href="assets/css/cursor.css" />
-    <link
-      id="favicon"
-      rel="icon"
-      href="assets/images/favicon.png"
-      type="image/png"
-    />
+    <link id="favicon" rel="icon" href="assets/images/favicon.png" type="image/png"/>
     <!--Favicon-->
     <script defer src="./assets/js/dynamicTitle.js"></script>
     <style>
@@ -53,11 +44,13 @@
     th, td {
       border: 1px solid #ccc;
       padding: 12px;
-      text-align: left;
+      text-align: center;
+      font-weight: bold;
     }
     th {
       color: #26ff00;
       font-style: italic;
+      font-size:small ;
     }
     .severity {
       padding: 5px 10px;
@@ -158,6 +151,46 @@
   left: -4.35em;
   z-index: -1;
 }
+
+.mover{
+  top: 10em;
+}
+
+.exp-logo{
+  width: 45%;
+  height: 128px;
+}
+
+.cert-size{
+  font-size: 25px;
+}
+  .tag1-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 per row */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .tag1 {
+    background: #47c0c7;       /* teal color */
+    color: #fff;
+    padding: 16px 2 px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* Responsive for mobile */
+  @media(max-width: 900px){
+    .tag1-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media(max-width: 600px){
+    .tag1-grid { grid-template-columns: repeat(1, 1fr); }
+  }
     </style>
   </head>
   <!-- pre load -->
@@ -589,15 +622,11 @@
                 </g>
               </svg>
             </div>
-            <div
-              class="dropdown px-md-5 col-md-6 d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeInUp animate__delay-1s"
-            >
+            <div class="dropdown px-md-5 col-md-6 d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeInUp animate__delay-1s">
               <h4 class="text-center heading1 skill-head">
                 MY <span class="my_skill">SKILLS</span>
               </h4>
-              <p
-                class="pre-heading font-weight-bolder text-center animate__animated animate__fadeInUp animate__delay-2s"
-              >
+              <p class="pre-heading font-weight-bolder text-center animate__animated animate__fadeInUp animate__delay-2s">
                 The secret to getting ahead is getting started. ― Mark Twain
               </p>
             </div>
@@ -616,7 +645,7 @@
       <div class="row" id="skillsContainer">
         <div class="bar col-md-12">
           <div class="info">
-        <p>Hi, myself Hariharasuthan. Experienced professional with over 2 years of hands-on experience in the cybersecurity field, committed to continuous growth and skill enhancement. Proficient in VAPT, cloud auditing, and network security, with a strong focus on overcoming challenges to achieve job satisfaction. Recognized for building positive relationships and making a meaningful impact in both personal and professional.</p>
+        <p>Hi, myself Hariharasuthan. Cybersecurity professional with 3+ years of hands-on experience in Vulnerability Assessment & Penetration Testing across web, mobile (Android & iOS), API, network, and cloud environments. Proven ability to identify high-impact security flaws, collaborate with Developer team, and drive vulnerabilities to full remediation. Recognized by Microsoft Security Response Center (MSRC Hall of Fame).</p>
         </div>
         </div>
 </div>
@@ -624,310 +653,524 @@
 </section>
   <!-- resume content -->  
   <section class="content" id="content">
-    <h4 class="text-center heading1 skill-head">
-      MY <span class="my_skill">RESUME</span>
-    </h4>
-
     <div class="container">
       <div class="row" id="skillsContainer">
         <div class="bar col-md-12">
           <div class="info">
-        <h3 style="font-weight: bold;">Domain Knowledge</h3>
-        <ul>
-          <li>Use Vulnerability Assessment tools such as Nessus, NMAP to perform security testing.</li><li>Apply OS patches and upgrades on a regular basis and monitor event logs in server.</li><li>Scan for  network and web-based vulnerability detection assessment.</li><li>Configuring Routing protocols such as RIP , EIGRP , OSPF &amp; BGP.</li>  <li>Scanning target networking and systems with commercial, open-source, or custom vulnerability detection scanners.</li> <li>OSI Model and computer networking including knowledge of basic desktop and networking topologies.</li>   <li>Networking - Setting up Hardware, VLAN. Subnetting, Routers, Switches.</li>    <li>Good knowledge of Windows Server administration, AD, group policy, DNS, DHCP.    </li>  <li>Good Understanding in OWASP TOP 10</li>
-        </ul>
+        <p>I possess strong domain knowledge in Vulnerability Assessment and Penetration Testing (VAPT), utilizing tools such as Nessus and Nmap to perform network, web, host, and system-level security testing. My expertise includes assessing target environments using commercial and open-source tools, along with a solid understanding of the OSI model, core networking concepts, and enterprise network topologies, and a thorough knowledge of OWASP Top 10 vulnerabilities.</p>
         </div>
         </div>
         <div class="bar col-md-12">
           <div class="info">
-        <h3 style="font-weight: bold;">Experience</h3>
-        <ul>
-          <li>Performed Vulnerability Assessment & Penetration Testing on 20+ business applications, encompassing web, Android, iOS, and API platforms.</li><li>Skilled in identifying application-level vulnerabilities such as XSS, SQL Injection, CSRF, authentication bypass, authentication flaws, file inclusion, session management, and privilege escalation.</li><li>Identifying and prioritizing vulnerabilities in applications according to OWASP Top 10, based on their criticality.</li><li>Coordinate with dev team to ensure closure of reported vulnerabilities by explaining the ease of exploitation and the impact of the issue.</li>  <li>Providing preventive, mitigating, and compensating controls to ensure the appropriate level of protection and Follow up and ensure the closure of the raised vulnerabilities by revalidating and ensuring 100% closure.</li>
-        </ul>
+        <p>I have performed Vulnerability Assessment and Penetration Testing on 50+ business applications, covering Web, Android, iOS, API, thick client, and thin client environments. I am skilled in identifying critical application-level vulnerabilities such as XSS, SQL Injection, CSRF, authentication and authorization flaws, file inclusion, session management issues, and privilege escalation. I prioritize vulnerabilities based on risk, impact, and OWASP Top 10 standards, and work closely with development teams to explain exploitation scenarios, business impact, and remediation strategies. I also provide preventive, mitigating, and compensating controls, revalidate fixes, and ensure 100% closure of reported security issues.</p>
         </div>
         </div>
         <div class="bar col-md-12">
           <div class="info">
-        <h3 style="font-weight: bold;">Assessment Highlights</h3>
-        <ul>
-          <li>Performed critical password change vulnerability for any user which leads to account takeover in financial based application and EV based application.</li><li>Executed a response manipulation attack to bypass authentication measure and account takeover via response manipulation.</li><li>Identified an Insecure Direct Object Reference (IDOR) vulnerability, enabling unauthorized access to view other users' order details, including sensitive information such as PII data in multiple projects.</li><li>Facilitated a comprehensive data dump of user details and profile data across multiple projects, demonstrating advanced skills in data extraction and analysis.</li>  <li>Facilitated a comprehensive data dump of user details and profile data across multiple projects, demonstrating advanced skills in data extraction and analysis.</li> <li>Possess extensive expertise in XDR solutions, including Cortex XDR, for advanced threat detection and endpoint security management.</li>
-        </ul>
+       <p>My assessment highlights include identifying a transaction PIN bypass during security testing of a top banking application across web, Android, and iOS platforms. I discovered critical password change vulnerabilities leading to account takeover in financial and EV-based applications, and successfully executed authentication bypass via response manipulation. I identified multiple IDOR vulnerabilities exposing sensitive PII and order details, and conducted large-scale user data extraction and analysis across multiple projects. Additionally, I possess hands-on experience with XDR solutions such as Cortex XDR for advanced endpoint threat detection and security monitoring.</p>
         </div>
         </div>
-<div class="bar col-md-6">
-  <div class="info">
-<h3 style="font-weight: bold;">TECHNICAL SKILLS</h3>
-<ul>
-  <li>Network-Based vulnerablity assessment</li> <li>Application-Based vulnerablity assessment</li><li>API-Based vulnerablity assessment</li><li>Host-Based vulnerablity assessment</li><li>Cloud-Based vulnerablity assessment</li>
-</ul>
-</div>
-</div>
-<div class="bar col-md-6">
-  <div class="info">
-<h3 style="font-weight: bold;">My Awards</h3>
-<p>AWARDED A PLACE IN THE HALL OF FAME OF THE MICROSOFT SECURITY RESPONSE CENTER (MSRC).</p>
-</div>
-</div>
-<div class="bar resume col-md-6">
-      <h4>Resume Document</h4>
-      <br />
-      <a href="HARIHARASUTHAN S.pdf" download="HARIHARASUTHAN S.pdf">
-        <button class="btn"><i class="fa fa-download"></i> Download</button>
-      </a>
-  </div>
 </div>
 </div>
 </section>
 <br><br>
 
-<!-- certification-->
-<section class="content" id="content">
-  <h4 class="text-center heading1 skill-head">
-    MY <span class="my_skill">Certifications</span>
-  </h4>
+<!-- Experience Carousel-->
+ <section class="content" id="content">
   <div class="container">
-    <div class="row" id="skillsContainer">
-      <div class="bar col-md-12">
-        <div class="info">
-      <h3 style="font-weight: bold;">Certified Ethical Hacker</h3>
-      <ul>
-        <ul>
-          <li>BASICS OF COMPUTER HARDWARE (A+) &amp; COMPUTER NETWORKING (N+)</li><li>CCNA- CISCO CERTIFIED NETWORK ASSOCIATE</li>    <li>RED HAT LINUX</li>    <li>MICROSOFT CERTIFIED SOLUTION EXPERT</li>    <li>CERTIFIED ETHICAL HACKER </li>    <li>CERTIFIED BUG HUNTER</li>
-          <br>
-          <h6>2021 - 2022, Prompt Infotech, Coimbatore</h6>
-        </ul>
-      </ul>
-      </div>
-      </div>
+    <div class="bar1">
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 dark:bg-gray-900">
+                 <div style="display: flex; align-items: center;">
+  <img src="image/WhatsApp_Image_2025-07-02_at_11..png" alt="Certificate" style="height: 40px; margin-right: 8px;">
+  <h1><span>Experience</span></h1>
 </div>
-</div>
-</section>
-<br>
-<br>
+          <label for="table-search" class="sr-only">Search</label>
+        </div>
 
-    <!--Hall Of fame section-->
+        <!-- Carousel -->
+        <div class="relative w-full" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden p-8 w-full border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 absolute inset-0" data-carousel-item>
+              <div style="margin-left: 30%;">
+                    <img class="w-50 h-20 rounded-full" src="/image/hackoversecurity.png" alt="Jese image">
+                    <br>
+                        <h3><a href="https://hackoversecurity.org/" target="_blank">Hack Over Security</a></h3>
+                <h5>Security Analyst</h5>
+                <h5>Coimbatore</h5>
+              </ul>
+              </tr>
+              </thead>
+              </div>
+            </div>
+
+            <!-- Item 2 (ACTIVE) -->
+            <div class="p-8 w-full border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 absolute inset-0" data-carousel-item="active">
+              <div style="margin-left: 30%;">
+             <img class="w-50 h-20 rounded-full" src="/image/digialert-logo2.webp" alt="Jese image">
+                 <br>
+              <h3><a href="https://hackoversecurity.org/" target="_blank">Digialert</a></h3>
+              <h5>Associate Security Consultant</h5>
+              <h5>Chennai</h5>
+            </div></div>
+
+            <!-- Item 3 -->
+            <div class="hidden p-8 w-full border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 absolute inset-0" data-carousel-item>
+             <div style="margin-left: 30%;">
+              <img class="w-50 h-20 " src="/image/FC GIF.gif" alt="Jese image">
+                  <br>
+              <h3><a href="https://www.futurecalls.com/" target="_blank">Futurecalls Technology PVT LTD</a></h3>
+              <h5>Information Security Analyst</h5>
+              <h5>Chennai</h5>
+            </div></div>
+
+            <!-- Item 4 -->
+            <div class="hidden p-8 w-full border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 absolute inset-0" data-carousel-item>
+              <div style="margin-left: 30%;">
+              <img class="w-50 h-20" src="/image/strongbox.png" alt="Jese image">
+                  <br>
+              <h3><a href="https://www.strongboxit.com/" target="_blank">Strongbox IT</a></h3>
+              <h5>Security Analyst</h5>
+              <h5>Chennai</h5>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <!-- Slider indicators -->
+          <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+              aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0" style="font-weight: bold; color: #4e00bb;">May 2022 <span>&#8594;</span>  Jan 2023</button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800"
+              aria-current="true" aria-label="Slide 2" data-carousel-slide-to="1" style="font-weight: bold; color: #4e00bb;">Nov 2023 <span>&#8594;</span> Feb 2024</button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+              aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2" style="font-weight: bold; color: #4e00bb;">Jun 2024 <span>&#8594;</span> May 2025</button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+              aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3" style="font-weight: bold ; color: #4e00bb; ">Jun 2025 <span>&#8594;</span> Present</button>
+          </div>
+
+          <!-- Slider controls -->
+          <button type="button" class="mover absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+
+          <button type="button" class="mover absolute end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Experience Carousel-->
+
+<!--Updated certificate-->
     <section class="content" id="content">
-      <h4 class="text-center heading1 skill-head">
-        My <span class="my_skill">Achievements</span>
-      </h4>
       <div class="container">
       <div class="bar1">
-        <h1>🏆 Hall of Fame</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Program Name</th>
-              <th>Severity</th>
-              <th>Vulnerability Type</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>December 31, 2021</td>
-              <td>Microsoft Security Response Center</td>
-              <td><span class="severity p4">P4</span></td>
-              <td>Github Information Disclosure</td>
-              <td><a href="https://msrc.microsoft.com/update-guide/acknowledgement" class="status-link">Vulnerability Closed</a></td>            
-            </tr>
-            <tr>
-              <td>July 02, 2024</td>
-              <td>Exam Prep Tool Security Research Reward</td>
-              <td><span class="severity p2">P2</span></td>
-              <td>Other</td>
-              <td><a href="https://cyber.comolho.com/verify-certificate/c54e84c3-2ea4-484f-9fd5-1cfcedae1530/" class="status-link">View Certificate</a></td>
-            </tr>
-            <tr>
-              <td>July 02, 2024</td>
-              <td>Exam Prep Tool Security Research Reward</td>
-              <td><span class="severity p3">P3</span></td>
-              <td>Other</td>
-              <td>Rewarded</td>
-            </tr>
-            <tr>
-              <td>May 30, 2024</td>
-              <td>Baazi Games Bug Bounty Program</td>
-              <td><span class="severity p4">P4</span></td>
-              <td>Cross Site Scripting</td>
-              <td><a href="https://cyber.comolho.com/verify-certificate/a6860bdc-2397-465c-acfa-d23d061e10f5/" class="status-link">View Certificate</a></td>
-            </tr>
-            <tr>
-              <td>May 30, 2024</td>
-              <td>Baazi Games Bug Bounty Program</td>
-              <td><span class="severity p4">P4</span></td>
-              <td>Cross Site Scripting</td>
-              <td><a href="https://cyber.comolho.com/verify-certificate/e6b09705-7a1d-4ab5-a248-89e80fa7ace4/" class="status-link">View Certificate</a></td>
-            </tr>
-            <tr>
-              <td>May 07, 2024</td>
-              <td>QuickReel's Bounty Programme</td>
-              <td><span class="severity p5">P5</span></td>
-              <td>Other</td>
-              <td>Rewarded</td>
-            </tr>
-            <tr>
-              <td>November 19, 2024</td>
-              <td>Jobaaj</td>
-              <td><span class="severity p1">P1</span></td>
-              <td>SQL Injection</td>
-              <td>Vulnerability Closed</td>            
-            </tr>
-            <tr>
-              <td>December 19, 2021</td>
-              <td>Hindustan College of Arts & Science</td>
-              <td><span class="severity p1">P1</span></td>
-              <td>SQL Injection</td>
-              <td><a href="sql injection.html" class="status-link">Vulnerability Closed</a></td>           
-            </tr>
-          </tbody>
-        </table>
-        <br>
-        <div class="logo-container">
-          <img src="image/microsoft-logo-02.jpeg" alt="Microsoft">
-          <img src="image/quickreel.jpg" alt="QuickReel Logo">
-          <img src="image/baazigames.webp" alt="Baazi Games Logo">
-          <img src="image/exampreptool_logo.jpeg" alt="Exam Prep Tool Logo">
-          <img src="image/jobaaj_com_logo.jpeg" alt="Jobaaj Logo">
-          <img src="image/hicas.png" alt="Hindustan Arts">
-        </div>
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 dark:bg-gray-900">
+       <div style="display: flex; align-items: center;">
+  <img src="image/certificate-removebg-preview.png" alt="Certificate" style="height: 40px; margin-right: 8px;">
+  <h1><span>Certifications</span></h1>
+</div>
+        <label for="table-search" class="sr-only">Search</label>
     </div>
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <tbody>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                 <td class="px-6 py-4 cert-size">
+                    BASICS OF COMPUTER HARDWARE (A+) &amp; COMPUTER NETWORKING (N+)
+                </td>
+            </tr>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <td class="px-6 py-4 cert-size">
+                    CCNA - CISCO CERTIFIED NETWORK ASSOCIATE
+                </td>
+            </tr>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <td class="px-6 py-4 cert-size">
+                    RED HAT LINUX
+                </td>
+            </tr>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <td class="px-6 py-4 cert-size">
+                    MICROSOFT CERTIFIED SOLUTION EXPERT
+                </td>
+            </tr>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <td class="px-6 py-4 cert-size">
+                    CERTIFIED ETHICAL HACKER
+                </td>
+            </tr>
+            <tr  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <td class="px-6 py-4 cert-size">
+                    CERTIFIED BUG HUNTER
+                </td>
+            </tr>
+                        <tr  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <td class="px-6 py-4 cert-size">
+                   Offensive Security Certified Professional <b>[OSCP & OSCP+]</b>
+                </td>
+            </tr>
+                        <tr  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <td class="px-6 py-4 cert-size">
+                    Multi-Cloud Red Team Analyst <b>[MCRTA]</b>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div></div>
+</div></div></section>
+
+<!--Updated certificate-->
+ <br>
+    <!--Hall Of fame section-->
+    <section class="content" id="content">
+      <div class="container">
+      <div class="bar1">
+        <!--editedhalloffame-->
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 dark:bg-gray-900">
+        <div>
+            <h1>🏆 Hall of Fame</h1>
+        </div>
+        <label for="table-search" class="sr-only">Search</label>
+    </div>
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              
+                <th scope="col" class="px-6 py-3">
+                    <h5>PROGRAM Name</h5>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <h5>DATE</h5>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <h5>severity</h5>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <h5>Vulnerability Type</h5>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <h5>Status</h5>
+                </th>
+            </tr>
+        </thead>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/hicas.png" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">Hindustan Collage of arts and science</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    Dec 19, 2021
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div><span class="severity p1">P1</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                  SQL Injection 
+                  </td>
+                  <td><a href="sql injection.html" class="status-link">Vulnerability Closed</a></td>
+            </tr>
+            <tr class="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/microsoft.jpeg" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">Microsoft Security Response Center</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    Dec 31, 2021
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div><span class="severity p4">P4</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                    Github Information Disclosure
+                  </td>
+                  <td><a href="https://msrc.microsoft.com/update-guide/acknowledgement" class="status-link">Vulnerability Closed</a></td>
+            </tr>
+            <tr class="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/baazigames.webp" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">Baazi Games Bug Bounty Program</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    May 30, 2024
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div><span class="severity p4">P4</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                  Reflected XXS  
+                  </td>
+                 <td><a href="https://cyber.comolho.com/verify-certificate/a6860bdc-2397-465c-acfa-d23d061e10f5/" class="status-link">View Certificate</a></td>
+            </tr>
+            <tr class="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/baazigames.webp" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">Baazi Games Bug Bounty Program</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    May 30, 2024
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                         <div><span class="severity p4">P4</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                  Reflected XXS  
+                  </td>
+                  <td><a href="https://cyber.comolho.com/verify-certificate/e6b09705-7a1d-4ab5-a248-89e80fa7ace4/" class="status-link">View Certificate</a></td>
+            </tr>
+            <tr class="dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/quickreel.jpg" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">QuickReel's Bounty Programme</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    May 07, 2024
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div><span class="severity p5">P5</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                  Security Misconfiguration    
+                  </td>
+                  <td>Rewarded</td>
+            </tr>
+            <tr class="dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/goodlives.png" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">GoodLives Bug Bounty Program</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    Jun 28, 2024
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div><span class="severity p5">P5</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                  Security Misconfiguration  
+                  </td>
+                   <td><a href="https://cyber.comolho.com/verify-certificate/9d79d15c-f96f-4e35-bfa9-a90fd8c96a56/" class="status-link">View Certificate</a></td>
+            </tr>
+                        <tr class="dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/exampreptool_logo.jpeg" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">Exam Prep Tool Security Research Reward</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    Jul 02, 2024
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div><span class="severity p2">P2</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                  Security Misconfiguration    
+                  </td>
+                  <td><a href="https://cyber.comolho.com/verify-certificate/c54e84c3-2ea4-484f-9fd5-1cfcedae1530/" class="status-link">View Certificate</a></td>
+            </tr>
+                                    <tr class="dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/exampreptool_logo.jpeg" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">Exam Prep Tool Security Research Reward</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    Jul 02, 2024
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div><span class="severity p3">P3</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                  Security Misconfiguration    
+                  </td>
+                  <td>Rewarded</td>
+            </tr>
+                        <tr class="dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/jobaaj_com_logo.jpeg" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">Jobaaj</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    Nov 19, 2024
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div><span class="severity p1">P1</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    <!-- Modal toggle -->
+                  SQL Injection  
+                  </td>
+                 <td>Vulnerability Closed</td>
+            </tr>
+                        <tr class="dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <img class="w-10 h-10 rounded-full" src="/image/plumsamil-round.png" alt="Jese image">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">Plumsail Bug Bounty</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">
+                    Jun 22, 2025
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div style="filter: blur(6px);"><span class="severity p3">P3</span></div>
+                    </div>
+                </td>
+                <td class="px-6 py-4" style="filter: blur(6px);">
+                    <!-- Modal toggle -->
+                  XXXXXXXX  
+                  </td>
+                  <td>Rewarded</td>
+            </tr>
+        </tbody>
+    </table>
     </section>
     <br><br>
     <!-- experience section -->
+
+
          <!-- skills section starts -->
     <section class="skills" id="skills">
       <h4 class="text-center heading1 skill-head">
-        Skills & <span class="my_skill">Abilities</span>
+        Skills / <span class="my_skill">Knowledge</span>
       </h4>
-
       <div class="container">
         <div class="row" id="skillsContainer">
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/icons/icons/icons8-html5-48.png" />
-              <span>HTML</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/icons/icons/icons8-css3-48.png" />
-              <span>CSS</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/icons/icons/icons8-javascript-48.png" />
-              <span>JavaScript</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/icons/icons/icons8-bootstrap-48.png" />
-              <span>Bootstrap</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/icons/icons/icons8-mysql-48.png" />
-              <span>MySQL</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/icons/icons/icons8-python-58.png" />
-              <span>python</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/icons/icons/icons8-github-48.png" />
-              <span>Github</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/icons/icons/icons8-git-48.png" />
-              <span>Git</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="assets/icons/icons/Azure.jpeg" />
-              <span>Azure</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="assets/icons/icons/Burpsuit.png" />
-              <span>BurpSuit</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="assets/icons/icons/nmap.png" />
-              <span>Nmap</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img src="assets/icons/icons/postman (2).png" />
-              <span>Postman</span>
-            </div>
-          </div>
+          <div class="tag1-grid">
+  <div class="tag1">Kali Linux</div>
+  <div class="tag1">Network Vulnerability Scanning</div>
+
+  <div class="tag1">Exploitation</div>
+  <div class="tag1">Client Side Attacks</div>
+  <div class="tag1">Web Exploitation</div>
+
+  <div class="tag1">Password Attacks</div>
+  <div class="tag1">Pivoting</div>
+  <div class="tag1">Bash Scripting</div>
+
+  <div class="tag1">Active Information Gathering</div>
+  <div class="tag1">Passive Information Gathering</div>
+  <div class="tag1">Vulnerability Scanning</div>
+
+  <div class="tag1">Web Application Attacks</div>
+  <div class="tag1">Locating Public Exploits</div>
+  <div class="tag1">Fixing Public Exploits</div>
+  <div class="tag1">File Transfers</div>
+
+  <div class="tag1">Antivirus Evasion</div>
+  <div class="tag1">Port Redirection</div>
+  <div class="tag1">Tunneling</div>
+
+  <div class="tag1">Active Directory Attacks</div>
+  <div class="tag1">Privilege Escalation</div>
+
+  <div class="tag1">Metasploit</div>
+  <div class="tag1">Port Scanning</div>
+  <div class="tag1">Information Gathering</div>
+
+  <div class="tag1">Cloud Adversary Simulation</div>
+  <div class="tag1">MITRE Cloud ATT&CK</div>
+  <div class="tag1">IAM, Storage, Compute, RBAC</div>
+
+  <div class="tag1">Enterprise Cloud Tech</div>
+  <div class="tag1">AWS/Azure/GCP Security</div>
+  <div class="tag1">Red Team in Cloud</div>
+</div>
         </div>
       </div>
     </section>
     <!-- skills section ends -->
-     <!-- Experience section-->
-    <h4 class="text-center heading1 skill-head">
-      MY <span class="my_skill">Experience</span>
-    </h4>
-<!-- section new-->
-<div>
-  <div class="item">
-   <div class="image">
-      <img src="image/FC GIF.gif" alt="Avatar" style="width:250px">
- </div>
-<div class="details">
-  <div>
-    <h1><a href="https://www.futurecalls.com/" target="_blank">Futurecalls Technology Private Limited</a></h1>
-<p>Information Security Analyst</p>
-<p>Jun 2024 - Present</p>
-<p>Chennai</p>
-</div>
-</div>
-</div>
 
-<div class="item">
-<div class="image">
-<img src="image/digialert-logo2.webp" alt="Avatar">
-</div>
-<div class="details">
-<div>
-<h1><a href="https://digialert.com/" target="_blank">Digialert</a></h1>
-<p>Associate Security Consultant</p>
-<p>Nov 2023 - Feb 2024</p>
-<p>Chennai</p>
-</div>
-</div>
-</div>
+ <!--Badge certificate-->
+  <section class="skills" id="skills">
+      <h4 class="text-center heading1 skill-head">
+      Earned <span class="my_skill">Badge</span>
+      </h4>
+      <div class="container">
+        <div class="row" id="skillsContainer">
+          <div class="bar">
+            <div class="info">
+              <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/167318101" />
+              <span>OSCP</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/167317718" />
+              <span>OSCP+</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://cwlabsplatform.blob.core.windows.net/images/IMCRT.png" width="200" height="200"/>
+              <span style="font-size: 29px;">Multi-Cloud Red Teaming Analyst</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <!--Badge certificate-->
 
-<div class="item">
-<div class="image">
-<img src="image/hackoversecurity.png" alt="Avatar">
-</div>
-<div class="details">
-<div>
-<h1><a href="https://hackoversecurity.org/" target="_blank">Hack Over Security</a></h1>
-<p>Security Analyst</p>
-<p>May 2022 - Jan 2023</p>
-<p>Coimbatore</p>
-</div>
-</div>
-</div>
-</div>
-<br>
     <!--Cursor-->
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
@@ -945,6 +1188,7 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
